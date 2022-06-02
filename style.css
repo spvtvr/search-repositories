@@ -1,0 +1,156 @@
+/* Базовые настройки */
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+    color: #fff;
+}
+
+ul[class],
+ol[class],
+menu {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul[class],
+ol[class],
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #325475;
+}
+/* Базовые настройки */
+
+.wrapper {
+    display: flex;
+}
+
+.header {
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 30px;
+    cursor: default;
+}
+
+.search {
+    width: 303px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12); 
+    
+}
+
+.search-input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+.search-item {
+    color: black;
+    list-style: none;
+    padding: 8px 12px;
+    cursor: default;
+    border-radius: 3px;
+    width: 100%;
+    display: block;
+}
+
+.search-item:hover {
+    background-color: #eaeaea;
+}
+
+.search-complete-box-off {
+    display: none;
+}
+
+.result-list {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.result-item {
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-item p {
+    color: #353535;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.result-delete {
+    width: 30px;
+    height: 30px;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.result-delete::before {
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #940718;
+    position: absolute;
+    transform: translate(0px, -7px) rotate(45deg);
+}
+
+.result-delete::after {
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #940718;
+    position: absolute;
+    transform: translate(0px, -7px) rotate(-45deg);
+}
